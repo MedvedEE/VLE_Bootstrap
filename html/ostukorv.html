@@ -14,10 +14,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
   <!--minu CSS-->
   <link rel="stylesheet" href="/VLE_Bootstrap/css/custom.css">
+  
 </head>
 
 <body>
-<!-- Navigatsioon --->
+  <!-- Navigatsioon --->
   <nav class="navbar navbar-expand-lg bg-dark py-3" data-bs-theme="dark">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -46,7 +47,7 @@
             </ul>
           </li>
         </ul>
-       
+        
 		<!--Otsi vorm -->
         <form class="d-flex me-1">
           <div class="input-group">
@@ -59,74 +60,54 @@
        
 	   <!--Login ikoon-->
         <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
-        
+       
 	   <!--Ostukorvi ikoon-->
-        <a class="btn btn-primary" href="/VLE_Bootstrap/html/ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
-      
-	  </div>
+        <a class="btn btn-primary" href="ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
+      </div>
     </div>
   </nav>
-  
-  <!--Tee ise: siia konteinerisse lisa pildikarusell-->
-  <div class="container">
-    <div class="row">
-      <h1>Tere, Bootstrap!</h1>
-    </div>
-  </div>
-  
-  <!--Tooted avalehel kaartidena-->
-  <div class="container overflow-hidden">
-    <div class="row g-4 row justify-content-center">
-      <div class="col-xl-3 col-md-6">
-        <div class="card">
-          <img src="/VLE_Bootstrap/images/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
-          <div class="card-body">
-            <h5 class="card-title text-primary-emphasis">Saapad 1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
-              pretium lobortis.</p>
-            <a href="/VLE_Bootstrap/html/toode.html" class="btn btn-primary float-end">199 €</a>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex align-items-start flex-column">
+          <div class="mb-auto p-2">
+            <h4>Teie ostukorv</h4>
+          </div>
+          <div class="mb-auto p-2 row">
+            <div class="col-lg-6">
+              <img src="/VLE_Bootstrap/images/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" width="100%">
+            </div>
+            <div class="col-lg-6">
+              <p>199 &#8364;</p>
+              <p>Ilusad saapad</p>
+              <select class="form-control col-lg-6 form-sm" id="kogus">
+                <option>0</option>
+                <option selected="selected">1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+              <br />
+            </div>
+          </div>
+          <div class="p-2">
+            <p>Tarne: tasuta</span></p>
+            <p>Kokku: 199 &#8364;</span></p>
+          </div>
+          <div class="p-2 mx-auto">
+            <a href="#" class="btn btn-primary btn-lg mb-3">Maksma</a>
           </div>
         </div>
-      </div>
-      <div class="col-xl-3 col-md-6">
-        <div class="card">
-          <img src="/VLE_Bootstrap/images//VLE_Bootstrap/images/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
-          <div class="card-body">
-            <h5 class="card-title text-primary-emphasis">Saapad 2</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
-              pretium lobortis.</p>
-            <a href="#" class="btn btn-primary float-end"><s>149 €</s> 99 € </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6">
-        <div class="card">
-          <img src="/VLE_Bootstrap/images/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
-          <div class="card-body">
-            <h5 class="card-title text-primary-emphasis">Saapad 3</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
-              pretium lobortis.</p>
-            <a href="#" class="btn btn-primary float-end"><s>159 €</s> 79 €</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3  col-md-6">
-        <div class="card">
-          <img src="/VLE_Bootstrap/images/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
-          <div class="card-body">
-            <h5 class="card-title text-primary-emphasis">Saapad 4</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
-              pretium lobortis.</p>
-            <a href="#" class="btn btn-primary float-end"><s>129 €</s> 69 €</a>
-          </div>
+        <div class="col-lg-6">
+          <!--Tee ise: korrasta (lisa) ostukorvi vormi nii, et sellel oleks väljad kasutaja andmete jaoks, makse ja tarneviisi valik ning ostukorv oleks kujundatud järgides kasutajaliidese disaini põhimõtteid.-->
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
   
   <!--Tee ise: kujunda siia korrektne jalus - lisa kontaktid ja sotsiaalvõrgustike lingid ikoonidega.-->
   <footer class="footer bg-light">
-    <div class="container">
+	<div class="container">
       <h1>Jalus</h1>
     </div>
   </footer>
@@ -135,12 +116,11 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
-  
+	
   <!--Bootstrap.js-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>
