@@ -15,6 +15,46 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 <link rel="stylesheet" href="custom.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-dark py-3" data-bs-theme="dark">
+    <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    <a class="navbar-brand me-5" href="#">Bootstrap 5</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Naised</a>
+           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+             <li><a class="dropdown-item" href="#">Saapad</a></li>
+           </ul>
+         </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mehed</a>
+           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <li><a class="dropdown-item" href="#">Kingad</a></li>
+             <li><a class="dropdown-item" href="#">Saapad</a></li>                        
+           </ul>
+          </li>
+        </ul>
+        <!--Otsi vorm -->
+         <form class="d-flex me-1">
+          <div class="input-group">
+           <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
+            <input class="form-control" type="search" placeholder="Otsi" aria-label="Search">
+         </form>
+        </div>
+    <div class="float-end">
+        <!--login ikoon-->
+        <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
+        <!--ostukorvi ikoon-->
+        <a class="btn btn-primary" href="#" type="submit"><span class="bi bi-cart3"></span></button></a>
+        </div>
+    </div>
+</nav>
+    
 <h1>Tere, Bootstrap!</h1>
 <!--Popper.js-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
