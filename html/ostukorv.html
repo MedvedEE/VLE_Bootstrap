@@ -19,7 +19,7 @@
 
 <body>
   <!-- Navigatsioon --->
-  <nav class="navbar navbar-expand-lg bg-dark py-3" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,13 +69,14 @@
   <section>
     <div class="container">
       <div class="row">
+        <!-- Ostukorv -->
         <div class="col-lg-6 d-flex align-items-start flex-column">
           <div class="mb-auto p-2">
             <h4>Teie ostukorv</h4>
           </div>
           <div class="mb-auto p-2 row">
             <div class="col-lg-6">
-              <img src="/VLE_Bootstrap/images/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" width="100%">
+              <img src="/VLE_Bootstrap/images/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" width="100%" alt="Ilusad saapad">
             </div>
             <div class="col-lg-6">
               <p>199 &#8364;</p>
@@ -90,15 +91,62 @@
             </div>
           </div>
           <div class="p-2">
-            <p>Tarne: tasuta</span></p>
-            <p>Kokku: 199 &#8364;</span></p>
+            <p>Tarne: tasuta</p>
+            <p>Kokku: 199 &#8364;</p>
           </div>
           <div class="p-2 mx-auto">
             <a href="#" class="btn btn-primary btn-lg mb-3">Maksma</a>
           </div>
         </div>
+        
         <div class="col-lg-6">
-          <!--Tee ise: korrasta (lisa) ostukorvi vormi nii, et sellel oleks väljad kasutaja andmete jaoks, makse ja tarneviisi valik ning ostukorv oleks kujundatud järgides kasutajaliidese disaini põhimõtteid.-->
+          <h4>Kasutaja andmed</h4>
+          <form>
+            <div class="mb-3">
+              <label for="nimi" class="form-label">Täisnimi</label>
+              <input type="text" class="form-control" id="nimi" placeholder="Sisesta oma nimi">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Sisesta oma email">
+            </div>
+            <div class="mb-3">
+              <label for="aadress" class="form-label">Aadress</label>
+              <input type="text" class="form-control" id="aadress" placeholder="Sisesta tarneaadress">
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="linn" class="form-label">Linn</label>
+                <input type="text" class="form-control" id="linn" placeholder="Sisesta linn">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="postiindeks" class="form-label">Postiindeks</label>
+                <input type="text" class="form-control" id="postiindeks" placeholder="Sisesta postiindeks">
+              </div>
+            </div>
+            
+            <h4>Makseviis</h4>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Vali makseviis">
+                <option selected>Vali makseviis</option>
+                <option value="1">Krediitkaart</option>
+                <option value="2">Pangaülekanne</option>
+                <option value="3">PayPal</option>
+              </select>
+            </div>
+            
+            <h4>Tarneviis</h4>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Vali tarneviis">
+                <option selected>Vali tarneviis</option>
+                <option value="1">Pakiautomaat</option>
+                <option value="2">Kuller</option>
+                <option value="3">Tulen ise järgi</option>
+              </select>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Esita tellimus</button>
+          </form>
         </div>
       </div>
     </div>
@@ -106,9 +154,29 @@
 
   
   <!--Tee ise: kujunda siia korrektne jalus - lisa kontaktid ja sotsiaalvõrgustike lingid ikoonidega.-->
-  <footer class="footer bg-light">
-	<div class="container">
-      <h1>Jalus</h1>
+  <footer class="footer bg-light mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Kontaktid</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt-fill"></i> Aadress: Tänav 123, Tartu</li>
+            <li><i class="bi bi-telephone-fill"></i> Telefon: +372 5454 1010</li>
+            <li><i class="bi bi-envelope-fill"></i> E-post: info@veebileht.ee</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Jälgi meid</h5>
+          <ul class="list-unstyled d-flex">
+            <li><a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#" class="text-dark me-3"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p class="text-muted">&copy; 2024 Veebileht. Kõik õigused kaitstud.</p>
+      </div>
     </div>
   </footer>
   

@@ -19,7 +19,7 @@
 
 <body>
 <!-- Navigatsioon --->
-  <nav class="navbar navbar-expand-lg bg-dark py-3" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +62,7 @@
         <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
       
 	  <!--Ostukorvi ikoon-->
-        <a class="btn btn-primary" href="ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
+        <a class="btn btn-primary" href="/VLE_Bootstrap/html/ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
       </div>
     </div>
   </nav>
@@ -91,7 +91,7 @@
                 </button>
               </h2>
 			<!--Tee ise: esimene valik peab olema lehe avamisel avatud.-->
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <strong>Hoolda seda toodet õigete vahenditega.</strong> Lorem ipsum dolor sit amet, consectetur
                   adipiscing elit. Phasellus tempor gravida ipsum, non mollis lorem luctus ac. Proin interdum tortor a
@@ -141,9 +141,29 @@
   </section>
   
   <!--Tee ise: kujunda siia korrektne jalus - lisa kontaktid ja sotsiaalvõrgustike lingid ikoonidega.-->
-  <footer class="footer bg-light">
-    <div class="container">
-      <h1>Jalus</h1>
+  <footer class="footer bg-light mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Kontaktid</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt-fill"></i> Aadress: Tänav 123, Tartu</li>
+            <li><i class="bi bi-telephone-fill"></i> Telefon: +372 5454 1010</li>
+            <li><i class="bi bi-envelope-fill"></i> E-post: info@veebileht.ee</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Jälgi meid</h5>
+          <ul class="list-unstyled d-flex">
+            <li><a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#" class="text-dark me-3"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p class="text-muted">&copy; 2024 Veebileht. Kõik õigused kaitstud.</p>
+      </div>
     </div>
   </footer>
   
