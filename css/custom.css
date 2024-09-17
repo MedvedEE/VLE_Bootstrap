@@ -29,11 +29,17 @@ footer .bi {
 
 .carousel-caption {
     text-align: right;
-  }
-  
-  .carousel-caption .bg-dark {
-    position: relative;
-    display: inline-block;
-    text-align: right;
-  }
-  
+}
+
+.carousel-caption .bg-dark {
+position: relative;
+display: inline-block;
+text-align: right;
+}
+body {
+padding-top: 80px;
+}
+
+.navbar {
+height: 80px; 
+}
