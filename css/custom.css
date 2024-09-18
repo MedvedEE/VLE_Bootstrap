@@ -28,14 +28,16 @@ footer .bi {
 
 .carousel-caption {
     text-align: right;
+    right: 0;
 }
 
 .carousel-caption .bg-dark {
-position: relative;
-display: inline-block;
-text-align: right;
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .carousel-item img {
-    height: 100px; 
+    height: 400px; 
     object-fit: cover; 
 }
