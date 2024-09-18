@@ -17,8 +17,7 @@
 </head>
 
 <body>
-  <!-- Navigatsioon --->
-  <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark"></nav>
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +51,25 @@
             <a class="nav-link" href="/VLE_Bootstrap/index.html">Kodulehele</a>
           </li>
         </ul>
-        
+       
+	   <!--Otsi vorm -->
+        <form class="d-flex me-1">
+          <div class="input-group">
+            <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
+            <input class="form-control" type="search" placeholder="Otsi" aria-label="Search">
+          </div>
+        </form>
+      </div>
+      <div class="float-end">
+      
+	  <!--Login ikoon-->
+        <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
+      
+	  <!--Ostukorvi ikoon-->
+        <a class="btn btn-primary" href="/VLE_Bootstrap/html/ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
+      </div>
+    </div>
+  </nav>
   <section class="container mt-5">    
     <div class="row">
       <div class="col-md-6">
